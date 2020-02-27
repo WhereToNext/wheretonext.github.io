@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Simon Reich Music</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- GitHub,. 2015. 'Fat/Zoom.Js'. https://github.com/fat/zoom.js. -->
+		<link rel="stylesheet" href="css/zoom.css" type="text/css" />
+		<!-- Gandy, Dave. 2015. 'Font Awesome, The Iconic Font And CSS Toolkit'. Fortawesome.Github.Io. http://fortawesome.github.io/Font-Awesome/. -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+		<!-- Resig, John. 2015. 'Jquery'. Jquery.Com. https://jquery.com/. -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<!-- Jqueryui.com,. 2015. 'Jquery UI'. https://jqueryui.com/. -->
+		 <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		 <!-- Otto, Mark, and Jacob Thornton. 2015. 'Bootstrap'. Getbootstrap.Com. http://getbootstrap.com/. -->
+		<script src="js/transition.js"></script>
+		<script src="js/zoom.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Visscher, Sjoerd. 2015. 'Afarkas/Html5shiv'. Github. https://github.com/afarkas/html5shiv. -->
+		<!-- [if lt IE 9]>
+			<script src="html5shiv/html5shiv.js"></script>
+			<script src="html5shiv/html5shiv-printshiv.js"></script>
+		<![endif]-->
+	</head>
+	<body id="home">
+		<div id="close">
+			<a href="#" id="close-text"><i class="fa fa-arrow-left"></i></a>
+		</div>
+		<section id="sidebar" class="sidebar">
+			<header>
+				<a href="index.html">Simon Reich</a>
+			</header>
+			<nav>
+				<ul>
+					<li><a class="links active" href="index.html">Home</a></li>
+					<li><a class="links" href="biography.html">Biography</a></li>
+					<li><a class="links" href="music.html">Music</a></li>
+					<li><a class="links" href="achievements.html">Achievements</a></li>
+					<li><a class="links" href="gallery.html">Gallery</a></li>
+					<li><a class="links" href="links.html">Links</a></li>
+					<li><a class="links" href="contact.html">Contact</a></li>
+					<li><a class="links" href="/pdf/CV.pdf">Resume</a></li>
+					<li><a class="links" href="songwriting.html">Songwriting</a></li>
+					<li><a class="links" href="engineering_production.html">Engineering &amp; Production</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="content" class="hidden"></section>
+		<footer>
+			<div class="music-player">
+				<i class="fa fa-backward"></i> 
+				<i class="fa fa-play"></i>
+				<i class="fa fa-pause hidden"></i>
+				<i class="fa fa-forward"></i>
+				<div id="tracker"></div>
+				<span id="song-title"></span>
+			</div>
+			<ul class="playlist hidden">
+				<li audiourl="Ashes.mp3" artist="Simon Reich">Ashes</li>
+				<li audiourl="Ashes.mp3" artist="Simon Reich">Ashes</li>
+				<li audiourl="Breathe.mp3" artist="Simon Reich">Breathe</li>
+				<li audiourl="28_Years.mp3" artist="Simon Reich">28 Years</li>
+				<li audiourl="Deep_Black.mp3" artist="Deep Black">Deep Black</li>
+				<li audiourl="Deep_Forest.mp3" artist="Simon Reich">Deep Forest</li>
+				<li audiourl="Full_Moon.mp3" artist="Simon Reich">Full Moon</li>
+				<li audiourl="Meg.mp3" artist="Simon Reich">Meg</li>
+				<li audiourl="Regrets.mp3" artist="Simon Reich">Regrets</li>
+				<li audiourl="Schnee_Gefallen.mp3" artist="Simon Reich">Schnee Gefallen</li>
+				<li audiourl="Suspended.mp3" artist="Simon Reich">Suspended</li>
+			</ul>
+		</footer>
+	</body>
+</html>

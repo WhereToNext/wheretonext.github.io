@@ -1,0 +1,304 @@
+/**
+	Stylesheet for Simon Reich Music
+	Copyright 2015 Benjamin Reich
+*/
+
+/* 
+"CSS3 @font-face Rule." W3Schools. http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp 
+Devlin, Ian. 2009. 'Adventures With @Font-Face'. Iandevlin.Com. http://www.iandevlin.com/blog/2009/12/webdev/adventures-with-font-face.
+Allows the font Frutiger to be utilised sitewide by utlising the font on our server
+Bigeslow & Holmes Inc., 1991. Lucida Handwriting Italic. Font. http://fontsgeek.com/fonts/Lucida-Handwriting-Italic.
+*/
+
+@font-face {
+	font-family: Lucida;
+	src: url('../fonts/Lucida.eot');
+	src: url('../fonts/Lucida.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Lucida.woff2') format('woff2'),
+		 url('../fonts/Lucida.woff') format('woff'),
+		 url('../fonts/Lucida.ttf') format('truetype'),
+		 url('../fonts/Lucida.svg#lucida') format('svg');
+}
+
+@font-face {
+	font-family: Frutiger;
+	src: url('../fonts/frutiger.eot');
+	src: url('../fonts/frutiger.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/frutiger.woff2') format('woff2'),
+		 url('../fonts/frutiger.woff') format('woff'),
+		 url('../fonts/frutiger.ttf') format('truetype'),
+		 url('../fonts/frutiger.svg#frutiger') format('svg');
+}
+
+@font-face {
+	font-family: Wingding;
+	src: url('../fonts/wingding.eot');
+	src: url('../fonts/wingding.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/wingding.woff2') format('woff2'),
+		 url('../fonts/wingding.woff') format('woff'),
+		 url('../fonts/wingding.ttf') format('truetype'),
+		 url('../fonts/wingding.svg#wingding') format('svg');
+}
+
+html {
+	height: 100%;
+}
+
+/* Set the body properties */
+body {
+	margin: 0 0 0 0;
+	padding: 0;
+	background-color: #000000;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: bottom right;
+	background-attachment: fixed;
+	transition: background 1s linear;;
+}
+
+header {
+	font-family: Lucida;
+	font-size: 20pt;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-shadow: 2px 2px 0px rgba(30, 108, 127, 1);
+	display: block;
+}
+
+#sidebar {
+	position: fixed;
+	overflow: hidden;
+	height: 100%;
+	background-color: rgba(41, 29, 8, 0.74);
+	width: 20%;
+	text-align: center;
+	z-index: 2;
+	left: 1%;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+nav {
+	z-index: 2;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li {
+	display: block;
+	list-style-type: none;
+}
+
+nav li a {
+	display: block;
+	font-family: Frutiger;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 5%;
+	margin-right: 13%;
+	margin-bottom: 3%;
+	padding: 3%;
+}
+
+nav li a:hover, nav li a.active {
+	background-color: #2A2421;
+}
+
+/* 
+	The various background images
+	TerraMolner. 2015. 'Grand Piano Wallpaper'. Bestwallpapersphoto.Com. http://www.bestwallpapersphoto.com/grand-piano-wallpaper-cool-22316-hd-pictures/ 
+*/
+body#home { background-image: url('../images/backgrounds/home.jpg'); transition: background 1s linear; }
+body#gallery { background-image: url('../images/backgrounds/guitar-studio.jpg'); transition: background 1s linear; }
+body#music { background-image: url('../images/backgrounds/simon-studio.jpg'); transition: background 1s linear; }
+body#biography { background-image: url('../images/backgrounds/simon-reich.jpg'); transition: background 1s linear; }
+body#links { background-image: url('../images/backgrounds/acoustic-studio.jpg'); transition: background 1s linear; }
+body#achievements { background-image: url('../images/backgrounds/simon-studio-guitar.jpg'); transition: background 1s linear; }
+body#songwriting { background-image: url('../images/backgrounds/acoustic-studio.jpg'); transition: background 1s linear; }
+body#engineering_production { background-image: url('../images/backgrounds/simon-studio.jpg'); transition: background 1s linear; }
+body#contact { background-image: url('../images/backgrounds/simon-reich.jpg'); transition: background 1s linear; }
+
+
+body#biography img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#close {
+	float: left;
+	position: absolute;
+	width: 1%;
+	height: 100%;
+	font-family: Wingding;
+	color: white;
+	border-left: 1px solid #3b2e12;
+	border-right: 1px solid #3b2e12;
+	background-color: rgba(41, 29, 8, 0.74);
+	display: table;
+	z-index: 2;
+}
+
+#close a {
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	z-index: 3;
+}
+
+#content {
+	position: relative;
+	left: 21%;
+	width: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 2%;
+}
+
+#content h1 {
+	font-family: Frutiger;
+	font-size: 15pt;
+}
+
+#content p {
+	font-family: Frutiger;
+	font-size: 10pt;
+}
+
+#content ul li {
+	font-family: Frutiger;
+	font-size: 10pt;
+}
+
+/*  "How to Make CSS Sticky Footer." Codeconvey. April 12, 2014. http://codeconvey.com/make-css-sticky-footer/ */
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 6%;
+	background-color: #000000;
+	width: 100%;
+	text-align: center;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	vertical-align: middle;
+	color: white;
+	font-family: Frutiger;
+	z-index: 1;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Stackoverflow.com,. 2015. 'How To Vertically Center A Div For All Browsers?'. http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers. */
+
+#tracker {
+	display: inline-block;
+	width: 200px;
+	height: 5px;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*
+	Script Tutorials,. 2013. 'HTML5 Audio Player With Playlist'. http://www.script-tutorials.com/html5-audio-player-with-playlist/.
+*/
+
+.music-player {
+	display: inline-block;
+}
+
+#song-info {
+	display: inline-block;
+	text-align: left;
+}
+
+.playlist, .links-section {
+	padding: 0;
+	margin: 0;
+}
+
+.links-section a {
+	color: #000;
+	text-decoration: none;
+}
+
+.playlist li, .links-section li {
+	display: block;
+	list-style-type: none;
+	padding: 10px;
+	font-family: Frutiger;
+	cursor: pointer;
+}
+
+.playlist li.active {
+	background-color: rgba(42, 36, 33, 0.5);
+	color: #FFFFFF;
+}
+
+.playlist li:hover, .links-section li:hover {
+    background-color: rgba(42, 36, 33, 0.25);
+}
+
+.playlist .right {
+	float: right;
+}
+
+.ui-slider-range {
+    background-color: red;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.ui-slider-handle {
+    cursor: pointer;
+    height: 10px;
+    margin-left: -5px;
+    position: absolute;
+    width: 10px;
+    z-index: 2;
+}
+
+.hidden {
+	display: none;
+}
+
+#picture-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-image img {
+	max-height: 110px;
+	max-width: 125px;
+}
+
+.gallery-image {
+	background-color: rgba(42, 36, 33, 0.5);
+	padding: 5px;
+	width: 125px;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}

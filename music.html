@@ -1,0 +1,23 @@
+			<h1>Music</h1>
+			<p>This page contains music written and produced by Simon Reich</p>
+			<p>Please click on the titles below</p>
+			<ul class="playlist">
+				<li audiourl="Ashes.mp3" artist="Simon Reich">Ashes</li>
+				<li audiourl="Breathe.mp3" artist="Simon Reich">Breathe</li>
+				<li audiourl="28_Years.mp3" artist="Simon Reich">28 Years</li>
+				<li audiourl="Deep_Black.mp3" artist="Deep Black">Deep Black</li>
+				<li audiourl="Deep_Forest.mp3" artist="Simon Reich">Deep Forest</li>
+				<li audiourl="Full_Moon.mp3" artist="Simon Reich">Full Moon</li>
+				<li audiourl="Meg.mp3" artist="Simon Reich">Meg</li>
+				<li audiourl="Regrets.mp3" artist="Simon Reich">Regrets</li>
+				<li audiourl="Schnee_Gefallen.mp3" artist="Simon Reich">Schnee Gefallen</li>
+				<li audiourl="Suspended.mp3" artist="Simon Reich">Suspended</li>
+			</ul>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$(".playlist li").click(function (e) {
+						stopAudio();
+						initAudio($(this));
+					});
+				});
+			</script>
